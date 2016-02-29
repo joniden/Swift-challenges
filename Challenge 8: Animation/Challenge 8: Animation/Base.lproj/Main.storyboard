@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Challenge_8__Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4wa-bC-dg8">
+                                <rect key="frame" x="232" y="269" width="137" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tk-Ds-qab">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="62"/>
+                                        <color key="backgroundColor" red="0.538137595034613" green="0.92759469391712956" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" title="Animate me">
+                                            <color key="titleColor" red="0.26274509800000001" green="0.58039215690000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5KR-zB-PAn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="top" secondItem="4wa-bC-dg8" secondAttribute="topMargin" id="00W-5n-pn8"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Tk-Ds-qab" secondAttribute="trailing" id="0E8-DT-sZZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Tk-Ds-qab" secondAttribute="bottom" id="3LQ-fQ-YV0"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Tk-Ds-qab" secondAttribute="trailing" id="4H8-In-hN6"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="top" secondItem="4wa-bC-dg8" secondAttribute="top" id="81r-gQ-TJ2"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="leading" secondItem="4wa-bC-dg8" secondAttribute="leading" id="8GV-pa-KMZ"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="top" secondItem="4wa-bC-dg8" secondAttribute="top" id="Gcp-te-kak"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Tk-Ds-qab" secondAttribute="bottom" id="LIp-lF-wDR"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="top" secondItem="4wa-bC-dg8" secondAttribute="top" id="OML-eK-5Zp"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="trailing" secondItem="4wa-bC-dg8" secondAttribute="trailingMargin" id="T4t-qc-pBf"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="top" secondItem="4wa-bC-dg8" secondAttribute="top" id="aYw-pG-WMh"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="leading" secondItem="4wa-bC-dg8" secondAttribute="leading" id="g8A-q7-CTU"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="leading" secondItem="4wa-bC-dg8" secondAttribute="leading" id="nU6-vX-rht"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="bottom" secondItem="4wa-bC-dg8" secondAttribute="bottomMargin" id="q7U-rF-J6S"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="centerY" secondItem="4wa-bC-dg8" secondAttribute="centerY" id="s5Q-MU-Jql"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="centerX" secondItem="4wa-bC-dg8" secondAttribute="centerX" id="tco-OA-8fL"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="leading" secondItem="4wa-bC-dg8" secondAttribute="leadingMargin" id="zXU-nb-EKk"/>
+                                    <constraint firstItem="9Tk-Ds-qab" firstAttribute="leading" secondItem="4wa-bC-dg8" secondAttribute="leading" id="zbh-sM-vTE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4wa-bC-dg8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WmY-tJ-ADY"/>
+                            <constraint firstItem="4wa-bC-dg8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhz-jr-06G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animateMe" destination="9Tk-Ds-qab" id="nbh-8r-gER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="437"/>
+        </scene>
+    </scenes>
+</document>
