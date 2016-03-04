@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class Content {
+    
+    
+    func result(fileName: String) -> NSData{
+        
+        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "json")
+        let jsonData = NSData(contentsOfMappedFile: path!)
+        
+        return jsonData!
+    }
+    
+}

@@ -1,0 +1,19 @@
+{
+    "offices":[
+              {
+              "name": "The place",
+              "address": "Valhallavagen 12",
+              "picture": "No"
+              },
+               {
+              "name": "The verge",
+              "address": "Storgatan 12",
+              "picture": "Yes"
+               },
+               {
+               "name": "The Strip",
+               "address": "Hornsgatan 14",
+               "picture": "No"
+               }
+               ]
+}
