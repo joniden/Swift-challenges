@@ -55,7 +55,11 @@ class TableViewController: UITableViewController {
         let image = UIImage(named:row["image"] as! String)
         
         cell.backgroundView = UIImageView(image: image)
+        cell.contentMode = .ScaleAspectFill
+        
+        
         cell.backgroundColor = UIColor.clearColor()
+        cell.cellImage = UIImageView(image: image)
         cell.cellTitle.text = row["title"] as? String
         cell.cellTitle.backgroundColor = UIColor(white: 1, alpha: 0.5)
         

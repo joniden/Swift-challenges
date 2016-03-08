@@ -23,6 +23,7 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var cellTitle: UILabel!    
     @IBOutlet weak var cellBody: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
     
 
 }
