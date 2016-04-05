@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ljK-Wp-6f1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5r0-OJ-ejT">
+            <objects>
+                <tableViewController id="ljK-Wp-6f1" customClass="ViewController" customModule="Challenge_23" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" id="2yy-6a-ysd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" clipsSubviews="YES" contentMode="center" id="FVi-cT-nOx">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butterfly" translatesAutoresizingMaskIntoConstraints="NO" id="l7m-SA-T72">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="l7m-SA-T72" firstAttribute="leading" secondItem="FVi-cT-nOx" secondAttribute="leading" id="BR4-9U-nRr"/>
+                                <constraint firstAttribute="bottom" secondItem="l7m-SA-T72" secondAttribute="bottom" id="BsY-Q9-jPk"/>
+                                <constraint firstAttribute="trailing" secondItem="l7m-SA-T72" secondAttribute="trailing" id="cli-Np-5Cw"/>
+                                <constraint firstItem="l7m-SA-T72" firstAttribute="top" secondItem="FVi-cT-nOx" secondAttribute="top" id="oSE-Cy-gPl"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="82" id="EkW-tW-yjA" customClass="CountryCell" customModule="Challenge_23" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="328" width="320" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EkW-tW-yjA" id="whl-AJ-PWa">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Headline of the century" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TL-aa-Src">
+                                            <rect key="frame" x="22" y="8" width="152" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.49022435897435901" green="0.10217070846258519" blue="0.38830486452358748" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A really long text I'm writing on" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNS-FW-Lus">
+                                            <rect key="frame" x="22" y="37" width="556" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9TL-aa-Src" firstAttribute="leading" secondItem="whl-AJ-PWa" secondAttribute="leadingMargin" constant="14" id="6x5-JQ-8Yp"/>
+                                        <constraint firstItem="FNS-FW-Lus" firstAttribute="top" secondItem="9TL-aa-Src" secondAttribute="bottom" constant="8" id="DKk-21-xBP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="FNS-FW-Lus" secondAttribute="bottom" constant="16" id="buX-oR-vfm"/>
+                                        <constraint firstItem="FNS-FW-Lus" firstAttribute="leading" secondItem="whl-AJ-PWa" secondAttribute="leadingMargin" constant="14" id="c66-MT-fMa"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="FNS-FW-Lus" secondAttribute="trailing" constant="-266" id="gIM-dQ-yOJ"/>
+                                        <constraint firstAttribute="topMargin" secondItem="9TL-aa-Src" secondAttribute="top" id="kaS-iU-lLZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentLabel" destination="FNS-FW-Lus" id="d2d-TT-fLG"/>
+                                    <outlet property="headerLabel" destination="9TL-aa-Src" id="vVR-rt-Xtr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ljK-Wp-6f1" id="PnE-Ls-tk8"/>
+                            <outlet property="delegate" destination="ljK-Wp-6f1" id="YHX-xd-idH"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQe-p4-Blh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="450"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="butterfly" width="640" height="480"/>
+    </resources>
+</document>
